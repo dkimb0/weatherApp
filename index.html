@@ -8,16 +8,29 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <form action="">
-        <!-- <label for="location">Location:</label> -->
-        <input type="text" id="location" placeholder='Location' name="location">
-        <button type="submit" id="submitBtn">🔍</button>
-    </form>
-    <div id="currentWeather">
-        <p id="city"></p>
-        <p id="currentTemp"></p>
-        <p id="feelsLike"></p>
-        <p id="condition"></p>
+    <div id="overallDiv">
+        <form autocomplete="off">
+            <!-- <label for="location">Location:</label> -->
+            <input type="text" id="location" placeholder='Location' name="location">
+            <button type="submit" id="submitBtn">🔍</button>
+        </form>
+        <div id="weatherDiv">
+            <div id="currentWeather">
+                <p id="city"></p>
+                <p id="currentTemp"></p>
+                <p id="feelsLike"></p>
+            </div>
+        
+            <div id="tomorrowWeather">
+                <p id="tmrwHeader"></p>
+                <p id="tmrwTemp"></p>
+                <!-- <p id="tmrwFeelsLike"></p> -->
+                <p id="tmrwCondition"></p>
+                <p id="tmrwChanceOfRain"></p>
+            </div>
+        </div>
+    
     </div>
+
 </body>
 </html>
